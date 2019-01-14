@@ -15,3 +15,6 @@ RestAPI dengan Node JS
 - GET => (http://localhost:3000/getBlogs)
 - PUT => Process
 - DELETE => Process
+
+# Attention
+Bagi yang mau mendownload silahkan download, hanya saja pastikan ketika ingin memperbaharui sematkan link pengembang pertama, yaitu situs github Code Dadu Studio, kemudian pastikan ketika ingin ikut berkontribusi dalam pengembangan, jangan langsung di commit pada master project, kalo bisa minta izin dulu ke pihak admin.
