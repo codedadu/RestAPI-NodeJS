@@ -1,0 +1,25 @@
+{
+  "name": "restapi",
+  "version": "1.0.0",
+  "description": "Creating Rest API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./index.js",
+    "serve": "nodemon index.js"
+  },
+  "keywords": [
+    "rest",
+    "api"
+  ],
+  "author": "Code Dadu Studio",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mongoose": "^5.4.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9"
+  }
+}
