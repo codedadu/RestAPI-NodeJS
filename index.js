@@ -34,7 +34,19 @@ let getAllBlogs = (req, res) => {
         }
     })
 }
+
 app.get('/getBlogs', getAllBlogs);
+
+let getBlogByID = (req, res) => {
+    blogModel.findById((req.params.blogId), (err, blog) => {
+        if(err) {
+            res.send(err);
+        }
+        res.json(blog);
+    })
+}
+
+app.get('/blog/:blogId', getBlogByID);
 
 app.listen(PORT, () => {
     console.log(`Server is running on PORT: ${PORT}`)
