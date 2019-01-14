@@ -48,6 +48,30 @@ let getBlogByID = (req, res) => {
 
 app.get('/blog/:blogId', getBlogByID);
 
+// Create a EndPoint for Update Data
+let updateBlog = (req, res) => {
+    blogModel.findByIdAndUpdate({_id: req.params.blogId}, req.body, {new: true}, (err, updatedBlog) => {
+        if(err) {
+            res.send(err);
+        }
+        res.json(updateBlog);
+    })
+}
+
+app.put('/blog/:blogId', updateBlog);
+
+// Create a Endpoint for Deleting Data
+let deleteBlog = (req, res) => {
+    blogModel.remove({_id: req.params.blogId}, (err, blog) => {
+        if (err) {
+            res.send(err);
+        }
+        res.json({message: 'Blog Data Delete Successfully!..'})
+    })
+}
+
+app.delete('/blog/:blogId', deleteBlog);
+
 app.listen(PORT, () => {
     console.log(`Server is running on PORT: ${PORT}`)
 })
