@@ -13,8 +13,8 @@ RestAPI dengan Node JS
 # Documentation Dev
 - POST => (http://localhost:3000/newBlog)
 - GET => (http://localhost:3000/getBlogs)
-- PUT => Process
-- DELETE => Process
+- PUT => Process (http://localhost:3000/blog/{id})
+- DELETE => Process (http://localhost:3000/blog/{id})
 
 # Attention
 Bagi yang mau mendownload silahkan download, hanya saja pastikan ketika ingin memperbaharui sematkan link pengembang pertama, yaitu situs github Code Dadu Studio, kemudian pastikan ketika ingin ikut berkontribusi dalam pengembangan, jangan langsung di commit pada master project, kalo bisa minta izin dulu ke pihak admin.
